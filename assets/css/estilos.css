@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.mainfont{
+    font-family: Calibri;
+}
+
 body {
     display: grid;
     grid-template-areas: 'header header header'
@@ -17,15 +21,36 @@ body {
 /* BARRA SUPERIOR */
 header {
     grid-area: header;
-    background-color: grey;
+    background-color: white;
     height: 50px;
     display: flex;
 }
 
 header li {
+    display: flex;
+    height: 50px;
     list-style-type: none;
     padding: 10px;
+    margin: auto;
+    text-align: center;
 }
+
+
+
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
 
 /* Parte principal de la página donde esta 
 Jumbotron
@@ -34,7 +59,7 @@ Adicionales */
 
 main {
     grid-area: main;
-    background-color: orange;
+    background-color:darkslategrey;
     grid-template-rows: 100% 100% 100%;
 }
 
@@ -47,8 +72,14 @@ main {
     height: 500px;
     width: 100%;
     color: white;
+    opacity: 90%;
     text-align: center;
-    padding-top: 100px;
+    padding: 150px 100px;
+}
+
+#titulojumbotron{
+    margin: auto;
+    
 }
 
 /* CATALOGO */
@@ -71,7 +102,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .productos li {
@@ -80,8 +111,14 @@ main {
 }
 
 .productos li img {
-    height: 300px;
+
+    height: 500px;
     width: 300px;
+    object-fit:cover;
+    border: 5px;
+    border-color: black;
+    border-radius: 10px;
+    
 }
 
 
@@ -91,7 +128,6 @@ main {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 600px;
-    padding-bottom: 30px;
     place-content: center;
 
 }
@@ -100,51 +136,70 @@ main {
     background-image: url(../images/soldador.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 600px;
     text-align: center;
     padding-top: 50px;
 
 }
 
-#adicionalareaB {
-    background-color: purple;
-    height: 500px;
+#RegistroUsuario {
+    background-color: grey;
+    height: 600px;
+    list-style: none;
+    padding: 20px;
 }
+input[type=text], input[type=password] {
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0 10px 0;
+        display: inline-block;
+        border: none;
+        background: white;
+}
+button{
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.login{
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+
+}
+
 
 footer {
     grid-area: footer;
     display: flex;
+
 }
+
+
 
 footer li {
     flex-direction: row;
+    list-style: none;
+}
+footer ul {
+    padding: 50px 100px 50px 50px;
 }
 
-
-
-/* Ajuste a los diferentes tamaños de pantallas
-@media (max-width: 400px){
-    .navegador {
-        height: 10px;
-        justify-content: space-around;
-        font-size: 20px;
-        background-color: blue;
-    }
+footer ul .contacto {
+    width: 50px;
+    height: 50px;
+    padding: 50px;
 }
 
-@media (min-width: 401px) and (max-width: 600px){
-    .navegador {
-        justify-content: space-around;
-        font-size: 20px;
-        background-color: yellow;
-    }
+footer h3{
+    margin: 0px 0px 30px 0px;
 }
 
-@media (min-width: 601px) and (max-width: 1024px){
-    .navegador {
-        height: 10px;
-        justify-content: space-around;
-        font-size: 20px;
-        background-color: red;
-    }
+/* 
+@media screen and (max-width: 940px){
+
 } */
+

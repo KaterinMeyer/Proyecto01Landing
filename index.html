@@ -7,117 +7,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 1</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
-    <!-- Jumbotron -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
-
 </head>
 
-<header>
+<header class="mainfont">
 
 
-    <li class="Home"><a href="#">
-            Logo</a></li>
-    <li class="Home"><a href="#">
-            Entre Fierro y Madera</a></li>
-    <li><a href="#">
-            Catálogo</a></li>
-    <li><a href="#">
-            ¿Quiénes Somos?</a></li>
-    <li><a href="#">
-            Contáctanos</a></li>
-    <li><a href="#">
-            Iniciar Sesión</a></li>
-    <li><a href="#">
-            Carro de Compras</a></li>
+    <img src="assets/images/table-logo.png" alt="TableLogo">
 
+        <li><a href="#">
+                Entre Fierro y Madera</a></li>
+        <li><a href="#">
+                Catálogo</a></li>
+        <li><a href="#">
+                ¿Quiénes Somos?</a></li>
+        <li><a href="#">
+                Iniciar Sesión</a></li>
+        <li><a href="#">
+                Carro de Compras</a></li>
 
 </header>
 
-<body>
+<body class="mainfont">
     <!-- PROMOCION donde va imagen a la izquierda, texto y casilla para ingresar correo a la derecha -->
     <main>
         <section id="jumbotron">
-            <h1>Entre Fierro y Madera</h1>
-            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam minima dolores odio. Officiis cum optio ipsa perspiciatis voluptatum, quos minus dolores in iste! Accusantium, eligendi cupiditate modi facere ullam blanditiis.</h1>
+            <h1 id="titulojumbotron">
+                Entre Fierro y Madera</h1>
+                <br>
+            <h1 id="titulojumbotron">
+                Fruto de la unión de los dos mejores materiales que provee la naturaleza, 
+                traemos a tu hogar los mejores muebles rústicos e industriales.
+                Diseños únicos de los cuales tu puedes ser partícipe con tus propias ideas. 
+            </h1>
         </section>
-        
-        
-
 
         <!-- CATALOGO -->
         <section id="catalogo">
             <div id="titulocatalogo">
-                <div><h1>Acá encontrarás una gran variedad de muebles</h1></div>
-                
-                <div><h3>Todo hecho de fierro y madera</h3></div>
+                <div>
+                    <h1>Catálogo de nuestro productos</h1>
+                </div>
+
+                <div>
+                    <h3>Todo los muebles son hechos de fierro y madera</h3>
+                </div>
             </div>
             <ul class="productos">
                 <li>
-                    <img src="/assets/images/producto1.jpg" alt="">
+                    <img src="/assets/images/producto1.jpg" alt="Mesa_Comedor">
                 </li>
                 <li>
-                    <img src="/assets/images/producto2.jpg" alt="">
+                    <img src="/assets/images/producto2.jpg" alt="Banco_Alternativo">
                 </li>
                 <li>
-                    <img src="/assets/images/producto3.jpg" alt="">
+                    <img src="/assets/images/producto3.jpg" alt="Arrimo_en_C">
+                </li>
+                <li>
+                    <img src="/assets/images/producto4.jpg" alt="Respisero">
                 </li>
             </ul>
-
-
-
-
 
         </section>
 
         <!-- ADICIONAL -->
         <div class="adicional">
 
-            <div id="adicionalareaB">
-                <h1>
-                    Entre Fierro y Madera
-                </h1>
-                <h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere labore consequatur
-                    consectetur, at vero laborum aliquid unde dolor, itaque quibusdam deleniti exercitationem delectus?
-                    Repellat animi eos obcaecati voluptatum doloribus?
-                </h4>
-                <input type="Ingrese su correo">
-                <button>Contáctanos</button>
-                <h5>
-                    Te enviamos nuestro catálogo para que comiences a inspirarte en tus nuevos muebles
-                </h5>
-            </div>
-            <div id="adicionalareaA">
+            <form action="">
+                <div id="RegistroUsuario">
+                    <h1>
+                        Registro de Usuario
+                    </h1>
+                    <hr>
+                    <h3 style="font-weight: lighter;">
+                        Regístrate y se parte de la creatividad de Entre Fierro y Madera.
+                        Te enviaremos nuestro catálogo completo para que comiences a soñar con tu nuevo espacio.
+                    </h3>
+                    <br>
 
+                    <label for="nombre"><b>Nombre</b></label>
+                    <input type="text" placeholder="Ingresar Nombre" name="nombreusuario">
+
+                    <label for="apellido"><b>Apellido</b></label>
+                    <input type="text" placeholder="Ingresar Apellido" name="nombreusuario">
+
+                    <label for="email"><b>Correo</b></label>
+                    <input type="text" placeholder="mail@correo.com" name="email">
+
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="******" name="nombreusuario">
+                    <label for="psw-repeat"><b>Re-ingresar Contraseña</b></label>
+                    <input type="password" placeholder="******" name="nombreusuario">
+                    <p>Al registrarse está de acuerdo con nuestros <a href="#" style="color:blue">Término y
+                            Condiciones</a>.</p>
+                    <button>Registrarse</button>
+                </div>
+            </form>
+
+            <div id="adicionalareaA">
             </div>
         </div>
-
     </main>
 
-    <footer>
+    <footer class="mainfont">
         <div>
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter
-            <li>Github</li>
-        </ul>
-    </div>
-        <div><ul>
-            <li>F</li>
-            <li>T</li>
-            <li>I</li>
-            <li>G</li>
-        </ul>
-    </div>
+            <ul class="contacto">
+                <li>
+                    <h3>Contacto</h3>
+                </li>
+                <img src="/assets/images/facebook-logo.png" width="20px" height="20px">
+                <img src="/assets/images/instagram-logo.png" width="20px" height="20px">
+                <img src="/assets/images/twitter-logo.png" width="20px" height="20px">
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3>Servicio al Cliente</h3>
+                </li>
+                <li>Contáctanos</li>
+                <li>Preguntas Frecuentes</li>
+                <li>Medios de Pago</li>
+                <li>Cambios y Devoluciones</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3>Entre Fierro y Madera</h3>
+                </li>
+                <li>Nuestra Empresa</li>
+                <li>Trabaja con Nosotros</li>
+                <li>Nuestra Historia</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3>Legal</h3>
+                </li>
+                <li>Privacidad</li>
+                <li>Término y Condiciones</li>
+            </ul>
+        </div>
     </footer>
-
-
-
-
-
 
 </body>
 
